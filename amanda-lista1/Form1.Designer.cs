@@ -97,12 +97,13 @@
             this.button1.TabIndex = 10;
             this.button1.Text = "Calcular";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(195, 438);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(82, 37);
             this.button2.TabIndex = 11;
             this.button2.Text = "limpar";
             this.button2.UseVisualStyleBackColor = true;
@@ -111,7 +112,7 @@
             // 
             this.button3.Location = new System.Drawing.Point(415, 438);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(92, 37);
             this.button3.TabIndex = 12;
             this.button3.Text = "sair";
             this.button3.UseVisualStyleBackColor = true;

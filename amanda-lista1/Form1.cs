@@ -16,6 +16,7 @@ namespace amanda_lista1
         {
             InitializeComponent();
         }
+        double area, raio, pi;
 
         private void label2_Click(object sender, EventArgs e)
         {
@@ -25,6 +26,13 @@ namespace amanda_lista1
         private void label3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            raio = double.Parse(textBox1.Text);
+            pi = Math.PI;
+            
         }
     }
 }
