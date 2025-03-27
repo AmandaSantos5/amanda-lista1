@@ -16,5 +16,37 @@ namespace amanda_lista1
         {
             InitializeComponent();
         }
+        int n1, n2, soma ;
+
+        private void Form2_amanda_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "";
+            textBox2.Text = "";
+            label5.Text = "";
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            n1 = int.Parse(textBox1.Text);
+            n2 = int.Parse(textBox2.Text);
+            soma = n1 + n2;
+            label5.Text = soma.ToString();
+        }
     }
 }

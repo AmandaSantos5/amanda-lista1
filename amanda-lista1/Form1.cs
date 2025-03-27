@@ -4,9 +4,11 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace amanda_lista1
 {
@@ -23,6 +25,17 @@ namespace amanda_lista1
 
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "";
+            label4.Text = "";
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
         private void label3_Click(object sender, EventArgs e)
         {
 
@@ -32,7 +45,9 @@ namespace amanda_lista1
         {
             raio = double.Parse(textBox1.Text);
             pi = Math.PI;
-            
+            area = pi * (raio * raio);
+            label4.Text = area.ToString("F2");
+
         }
     }
 }
