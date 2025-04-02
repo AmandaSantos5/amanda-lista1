@@ -57,6 +57,7 @@
             this.button3.TabIndex = 14;
             this.button3.Text = "Sair";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -67,6 +68,7 @@
             this.button2.TabIndex = 13;
             this.button2.Text = "Limpar";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // textBox1
             // 
@@ -75,6 +77,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(194, 24);
             this.textBox1.TabIndex = 12;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label4
             // 
@@ -95,6 +98,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(194, 27);
             this.label3.TabIndex = 10;
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // button1
             // 

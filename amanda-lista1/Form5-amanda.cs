@@ -18,9 +18,32 @@ namespace amanda_lista1
         }
         double cel, fah;
 
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "";
+            label3.Text = "";
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
-            cel = (fah - 32) - (5 / 9);
+            fah = Convert.ToDouble(textBox1.Text);
+            cel = (fah - 32) * (5 / 9);
+            label3.Text = cel.ToString();
         }
     }
 }

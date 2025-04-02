@@ -76,6 +76,12 @@
     <Compile Include="Form5-amanda.Designer.cs">
       <DependentUpon>Form5-amanda.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form6-amanda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6-amanda.Designer.cs">
+      <DependentUpon>Form6-amanda.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -92,6 +98,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form5-amanda.resx">
       <DependentUpon>Form5-amanda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6-amanda.resx">
+      <DependentUpon>Form6-amanda.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
