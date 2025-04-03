@@ -16,5 +16,27 @@ namespace amanda_lista1
         {
             InitializeComponent();
         }
+        double volume, raio, altura, pi;
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "";
+            textBox2.Text = "";
+            label5.Text = "";
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            raio = Convert.ToDouble(textBox1.Text);
+            altura = Convert.ToDouble(textBox2.Text);
+            pi = Math.PI;
+            volume = pi * (raio * raio) * altura;
+            label5.Text = volume.ToString();
+        }
     }
 }
