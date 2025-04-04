@@ -220,6 +220,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form7_amanda";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form7_amanda";
             this.ResumeLayout(false);
             this.PerformLayout();

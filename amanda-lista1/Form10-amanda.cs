@@ -10,42 +10,32 @@ using System.Windows.Forms;
 
 namespace amanda_lista1
 {
-    public partial class Form5_amanda : Form
+    public partial class Form10_amanda : Form
     {
-        public Form5_amanda()
+        public Form10_amanda()
         {
             InitializeComponent();
         }
-        double cel, fah;
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
+        double comprimento, largura, altura, volume;
 
         private void button2_Click(object sender, EventArgs e)
         {
             textBox1.Text = "";
-            label3.Text = "";
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
+            textBox2.Text = "";
+            textBox3.Text = "";
+            label5.Text = "";
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             try
             {
-                fah = Convert.ToDouble(textBox1.Text);
-                cel = (fah - 32) * (5 / 9);
-                label3.Text = cel.ToString();
+                comprimento = Convert.ToDouble(textBox1.Text);
+                largura = Convert.ToDouble(textBox2.Text);
+                altura = Convert.ToDouble(textBox3.Text);
+
+                volume = comprimento * (largura * altura);
+                label5.Text = volume.ToString();
             }
             catch (FormatException)
             {

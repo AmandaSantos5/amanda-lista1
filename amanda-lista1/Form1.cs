@@ -43,10 +43,16 @@ namespace amanda_lista1
 
         private void button1_Click(object sender, EventArgs e)
         {
+            try { 
             raio = double.Parse(textBox1.Text);
             pi = Math.PI;
             area = pi * (raio * raio);
             label4.Text = area.ToString("F2");
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Insira um valor válido nos campos.", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
         }
     }

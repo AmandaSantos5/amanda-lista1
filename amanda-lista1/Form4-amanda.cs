@@ -31,9 +31,16 @@ namespace amanda_lista1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            cel = Convert.ToDouble(textBox1.Text);
-            fah = (9 * cel + 160)/5;
-            label3.Text = fah.ToString();
+            try
+            {
+                cel = Convert.ToDouble(textBox1.Text);
+                fah = (9 * cel + 160) / 5;
+                label3.Text = fah.ToString();
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Insira um valor válido nos campos.", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

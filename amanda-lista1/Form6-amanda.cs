@@ -32,11 +32,18 @@ namespace amanda_lista1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            raio = Convert.ToDouble(textBox1.Text);
-            altura = Convert.ToDouble(textBox2.Text);
-            pi = Math.PI;
-            volume = pi * (raio * raio) * altura;
-            label5.Text = volume.ToString();
+            try
+            {
+                raio = Convert.ToDouble(textBox1.Text);
+                altura = Convert.ToDouble(textBox2.Text);
+                pi = Math.PI;
+                volume = pi * (raio * raio) * altura;
+                label5.Text = volume.ToString();
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Insira um valor válido nos campos.", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
