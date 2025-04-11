@@ -16,7 +16,7 @@ namespace amanda_lista1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form10_amanda());
+            Application.Run(new Form11_amanda());
         }
     }
 }

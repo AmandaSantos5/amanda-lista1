@@ -44,7 +44,7 @@ namespace amanda_lista1
             try
             {
                 fah = Convert.ToDouble(textBox1.Text);
-                cel = (fah - 32) * (5 / 9);
+                cel = (fah - 32) * 5 / 9;
                 label3.Text = cel.ToString();
             }
             catch (FormatException)

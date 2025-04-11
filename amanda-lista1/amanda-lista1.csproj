@@ -58,6 +58,18 @@
     <Compile Include="Form10-amanda.Designer.cs">
       <DependentUpon>Form10-amanda.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form11-amanda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form11-amanda.Designer.cs">
+      <DependentUpon>Form11-amanda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form12-amanda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form12-amanda.Designer.cs">
+      <DependentUpon>Form12-amanda.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form2-amanda.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +125,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form10-amanda.resx">
       <DependentUpon>Form10-amanda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form11-amanda.resx">
+      <DependentUpon>Form11-amanda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form12-amanda.resx">
+      <DependentUpon>Form12-amanda.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form2-amanda.resx">
       <DependentUpon>Form2-amanda.cs</DependentUpon>
