@@ -95,6 +95,7 @@
             this.button1.TabIndex = 5;
             this.button1.Text = "calcular";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label4
             // 
@@ -135,11 +136,14 @@
             this.button3.TabIndex = 9;
             this.button3.Text = "sair";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Form12_amanda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.CancelButton = this.button3;
             this.ClientSize = new System.Drawing.Size(800, 556);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -152,6 +156,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form12_amanda";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form12_amanda";
             this.Load += new System.EventHandler(this.Form12_amanda_Load);
             this.ResumeLayout(false);

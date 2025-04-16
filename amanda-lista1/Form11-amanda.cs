@@ -32,11 +32,17 @@ namespace amanda_lista1
 
         private void button1_Click(object sender, EventArgs e)
         {
+            try { 
             num = int.Parse(textBox1.Text);
             quad = num * num;
             cub = num * num * num;
             label5.Text = quad.ToString();
             label6.Text = cub.ToString();
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Insira um valor válido nos campos.", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
