@@ -76,6 +76,24 @@
     <Compile Include="Form13-amanda.Designer.cs">
       <DependentUpon>Form13-amanda.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form14-amanda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form14-amanda.Designer.cs">
+      <DependentUpon>Form14-amanda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form16-amanda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form16-amanda.Designer.cs">
+      <DependentUpon>Form16-amanda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form17-amanda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form17-amanda.Designer.cs">
+      <DependentUpon>Form17-amanda.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form2-amanda.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +158,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form13-amanda.resx">
       <DependentUpon>Form13-amanda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form14-amanda.resx">
+      <DependentUpon>Form14-amanda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form16-amanda.resx">
+      <DependentUpon>Form16-amanda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form17-amanda.resx">
+      <DependentUpon>Form17-amanda.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form2-amanda.resx">
       <DependentUpon>Form2-amanda.cs</DependentUpon>

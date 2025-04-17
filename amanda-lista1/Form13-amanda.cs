@@ -25,6 +25,12 @@ namespace amanda_lista1
 
         private void button2_Click(object sender, EventArgs e)
         {
+            textBox1.Text = "";
+            textBox2.Text = "";
+            label4.Text = "";
+            label11.Text = "";
+            label7.Text =  "";
+            label9.Text = "";
 
         }
 
@@ -45,6 +51,7 @@ namespace amanda_lista1
 
         private void button1_Click(object sender, EventArgs e)
         {
+            try { 
             num1= int.Parse(textBox1.Text);
             num2= int.Parse(textBox2.Text);
             quad1 = num1 * num1;
@@ -55,6 +62,11 @@ namespace amanda_lista1
             label7.Text = soma1.ToString();
             label11.Text = quad2.ToString();
             label9.Text = soma2.ToString();
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Insira um valor válido nos campos.", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
